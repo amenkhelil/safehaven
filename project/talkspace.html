@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkSpace - SafeHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="lucide-heart"></i>
+                <span>SafeHaven</span>
+            </a>
+            
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown">
+                        <a href="therapist.html" class="dropdown-link">Find a Therapist</a>
+                        <a href="qspace.html" class="dropdown-link">QSpace</a>
+                        <a href="issues.html" class="dropdown-link">Common Issues</a>
+                        <a href="library.html" class="dropdown-link">Psychology Library</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="talkspace.html" class="nav-link active">TalkSpace</a>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="btn-login">Login</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="talkspace">
+        <div class="talkspace-container">
+            <div class="talkspace-header">
+                <h1>TalkSpace</h1>
+                <p>A safe space to share, support, and connect with others anonymously</p>
+                <button class="create-post-btn" id="createPostBtn">
+                    <i class="lucide-plus-circle"></i>
+                    Create New Post
+                </button>
+            </div>
+
+            <div class="posts-container" id="postsContainer">
+                <!-- Sample posts for demonstration -->
+                <div class="post">
+                    <div class="post-header">
+                        <span class="anonymous-user">Anonymous Panda</span>
+                        <span class="post-time">2 hours ago</span>
+                    </div>
+                    <h3 class="post-title">Dealing with exam anxiety</h3>
+                    <p class="post-content">I've been struggling with exam anxiety lately. Any tips on how to manage this? It's affecting my performance and sleep schedule.</p>
+                    <div class="post-actions">
+                        <button class="action-btn">
+                            <i class="lucide-heart"></i>
+                            <span>24</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="lucide-message-circle"></i>
+                            <span>12 replies</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <span class="anonymous-user">Anonymous Fox</span>
+                        <span class="post-time">5 hours ago</span>
+                    </div>
+                    <h3 class="post-title">Finding balance in college life</h3>
+                    <p class="post-content">How do you manage to balance academics, social life, and self-care? I feel overwhelmed trying to keep up with everything.</p>
+                    <div class="post-actions">
+                        <button class="action-btn">
+                            <i class="lucide-heart"></i>
+                            <span>18</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="lucide-message-circle"></i>
+                            <span>8 replies</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="createPostModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Post</h2>
+                <button class="close-modal">
+                    <i class="lucide-x"></i>
+                </button>
+            </div>
+            <form id="postForm" class="post-form">
+                <div class="form-group">
+                    <label for="postTitle">Title</label>
+                    <input type="text" id="postTitle" required placeholder="What's on your mind?">
+                </div>
+                <div class="form-group">
+                    <label for="postContent">Content</label>
+                    <textarea id="postContent" required placeholder="Share your thoughts..."></textarea>
+                </div>
+                <button type="submit" class="submit-post">Post Anonymously</button>
+            </form>
+        </div>
+    </div>
+    <div class="chatbot-section">
+        <div class="chatbot-container">
+            <h2>Your Safe Space , Chat with me Anytime</h2>
+            <p>Take a step toward healing—our friendly chatbot is here to listen, support, and guide you through your journey. You’re not alone !</p>
+                    <button class="close-chatbot" id="closeChatbot"></button>
+                <div class="chatbot-body" id="chatbotBody">
+                    <p class="bot-message">Hello! How can I assist you today?</p>
+                </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">SafeHaven</div>
+            <p class="footer-tagline">Supporting student mental health, one step at a time</p>
+            
+            <div class="footer-social">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+            </div>
+            
+            <p class="footer-copyright">© 2024 SafeHaven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+    <script src="js/talkspace.js"></script>
+</body>
+</html>

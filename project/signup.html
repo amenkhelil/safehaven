@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SafeHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-icons/dist/umd/lucide.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="index.html" class="auth-logo">
+                    <i class="lucide-heart"></i>
+                    <span>SafeHaven</span>
+                </a>
+                <h1>Join Our Community</h1>
+                <p>Begin your journey to better mental health</p>
+            </div>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="lucide-mail"></i>
+                        Email Address
+                    </label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">
+                        <i class="lucide-user"></i>
+                        Anonymous Username
+                    </label>
+                    <input type="text" id="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="lucide-lock"></i>
+                        Password
+                    </label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+
+            <div class="auth-footer">
+                <p class="security-note">
+                    <i class="lucide-shield"></i>
+                    Your information is protected with end-to-end encryption. Your identity remains anonymous.
+                </p>
+                <p class="auth-switch">
+                    Already have an account? <a href="login.html">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
